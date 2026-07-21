@@ -137,3 +137,694 @@ body {
   text-decoration: none;
   color: inherit;
 }
+/* MAIN PAGE */
+
+.user-login-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+
+/*  LEFT PANEL*/
+
+.login-left-panel {
+  background-color: transparent;
+  border-right: none;
+}
+
+.login-logo-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #fce8e8;
+  border-radius: 50%;
+}
+
+.bus-track-title {
+  font-weight: 800;
+  color: #4a5568;
+  letter-spacing: 1px;
+}
+
+.welcome-title {
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #111;
+}
+
+.login-subtitle {
+  color: #718096;
+}
+
+
+/* FEATURE CARDS */
+
+.feature-container {
+  max-width: 400px;
+}
+
+.feature-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-icon {
+  background-color: #fce8e8;
+}
+
+.clock-icon {
+  background-color: #f3f4f6;
+}
+
+.gift-icon {
+  background-color: #fffaf0;
+}
+
+.feature-image {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.feature-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.feature-description {
+  color: #a0aec0;
+  font-size: 0.75rem;
+}
+
+
+/*LOGIN FORM*/
+
+.login-form-container {
+  width: 100%;
+  max-width: 500px;
+
+  background-color: #ffffff;
+
+  padding: 40px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  border-top: 4px solid #ef3b3a;
+}
+
+.sign-in-title {
+  font-weight: 800;
+  color: #111;
+}
+
+.sign-in-subtitle {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+
+/* ROLE TOGGLE */
+
+.role-toggle {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+}
+
+.role-link {
+  flex: 1;
+
+  text-align: center;
+
+  padding: 8px 0;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+}
+
+.active-role {
+  background-color: #111;
+  color: #fff;
+  font-weight: 600;
+}
+
+.inactive-role {
+  color: #718096;
+  font-weight: 500;
+}
+
+.disabled-role {
+  color: #a0aec0;
+  font-weight: 500;
+  cursor: not-allowed;
+}
+
+
+/* OFFER ALERT*/
+
+.offer-alert {
+  background-color: #fffaf0;
+  border: 1px solid #fbd38d;
+  border-radius: 8px;
+}
+
+.offer-icon {
+  margin-right: 12px;
+}
+
+.offer-title {
+  color: #9c4221;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.offer-text {
+  color: #c05621;
+  font-size: 0.75rem;
+}
+
+
+/*  FORM */
+
+.form-label-custom {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+.mobile-input-wrapper {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.country-code {
+  background-color: #f8f9fa;
+  border-right: 1px solid #e2e8f0;
+  font-weight: 600;
+}
+
+.mobile-input {
+  font-size: 0.9rem;
+}
+
+
+/*
+   OTP
+ */
+
+.resend-otp {
+  font-size: 0.75rem;
+  color: #ef3b3a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.otp-input {
+  width: 60px;
+  height: 50px;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  border: 1px solid #e2e8f0;
+}
+
+.active-otp {
+  border: 2px solid #111;
+}
+
+
+/* 
+   BUTTONS
+*/
+
+.send-otp-btn {
+  background-color: #ef3b3a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.google-btn {
+  border-radius: 8px;
+  border-color: #e2e8f0;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.google-letter {
+  color: #4285F4;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+.create-account-btn {
+  border-radius: 8px;
+  border-color: #e2e8f0;
+  color: #111;
+  font-weight: 700;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider-line {
+  border-color: #e2e8f0;
+}
+
+.divider-text {
+  color: #a0aec0;
+  font-size: 0.75rem;
+}
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.account-text {
+  color: #a0aec0;
+  font-size: 0.8rem;
+}
+
+.security-text {
+  font-size: 0.7rem;
+  color: #a0aec0;
+}
+/* =========================
+   STAFF LOGIN PAGE
+========================= */
+
+.staff-login-page {
+  background-color: #eceff1;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================
+   LEFT PANEL
+========================= */
+
+.staff-left-panel {
+  background-color: #eceff1;
+  border-right: 1px solid #eaeaea;
+}
+
+.staff-logo-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #fce8e8;
+  border-radius: 50%;
+}
+
+.staff-logo-icon {
+  font-size: 3.5rem;
+}
+
+.staff-portal-title {
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #111;
+}
+
+.staff-subtitle {
+  color: #718096;
+}
+
+
+/* =========================
+   FEATURE CARDS
+========================= */
+
+.staff-feature-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.staff-feature-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.staff-feature-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+.route-icon {
+  background-color: #eef2ff;
+  color: #4f46e5;
+}
+
+.schedule-icon {
+  background-color: #fffbeb;
+  color: #d97706;
+}
+
+.passenger-icon {
+  background-color: #f3f4f6;
+  color: #4a5568;
+}
+
+.staff-feature-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.staff-feature-description {
+  color: #a0aec0;
+  font-size: 0.75rem;
+}
+
+
+/* =========================
+   LOGIN FORM
+========================= */
+
+.staff-login-form-container {
+  width: 100%;
+  max-width: 500px;
+
+  background-color: #ffffff;
+
+  padding: 40px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  border-top: 4px solid #ef3b3a;
+}
+
+.staff-signin-title {
+  font-weight: 800;
+  color: #111;
+}
+
+.staff-signin-subtitle {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+
+/* =========================
+   ROLE TOGGLE
+========================= */
+
+.staff-role-toggle {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+}
+
+.staff-role-link {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.staff-active-role {
+  background-color: #111;
+  color: #fff;
+  font-weight: 600;
+}
+
+.staff-inactive-role {
+  color: #718096;
+  font-weight: 500;
+}
+
+.staff-disabled-role {
+  color: #a0aec0;
+  font-weight: 500;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.staff-form-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+.staff-input {
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.staff-password-wrapper {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.staff-password-input {
+  font-size: 0.9rem;
+}
+
+.staff-show-btn {
+  font-size: 0.75rem;
+  color: #ef3b3a;
+  font-weight: 700;
+}
+
+
+/* =========================
+   REMEMBER / FORGOT
+========================= */
+
+.remember-me {
+  font-size: 0.85rem;
+  color: #4a5568;
+}
+
+.forgot-password {
+  font-size: 0.8rem;
+  color: #ef3b3a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.staff-signin-btn {
+  background-color: #ef3b3a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.staff-divider-line {
+  border-color: #e2e8f0;
+}
+
+.staff-divider-text {
+  color: #a0aec0;
+  font-size: 0.75rem;
+}
+
+
+/* =========================
+   GOOGLE BUTTON
+========================= */
+
+.staff-google-btn {
+  border-radius: 8px;
+  border-color: #e2e8f0;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.staff-google-letter {
+  color: #4285F4;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+
+/* =========================
+   ADMIN CONTACT
+========================= */
+
+.staff-contact-text {
+  color: #a0aec0;
+  font-size: 0.8rem;
+}
+
+.admin-email {
+  color: #ef3b3a;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+
+/* =========================
+   SECURITY
+========================= */
+
+.staff-security-box {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.staff-security-text {
+  font-size: 0.7rem;
+  color: #718096;
+}
+/* Layout & Lines */
+.top-border-line {
+  height: 4px;
+  background-color: #ef3b3a;
+  width: 100%;
+}
+
+.cards-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Typography & Fonts */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-georgia {
+  font-family: Georgia, serif;
+}
+
+.heading-title {
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+.text-095 {
+  font-size: 0.95rem;
+}
+
+.text-085 {
+  font-size: 0.85rem;
+}
+
+.text-080 {
+  font-size: 0.8rem;
+}
+
+/* UI Elements */
+.tp-avatar {
+  width: 36px;
+  height: 36px;
+  font-size: 0.8rem;
+}
+
+.or-divider {
+  width: 56px;
+  height: 56px;
+  z-index: 10;
+  font-size: 0.9rem;
+}
+
+.badge-custom {
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+
+/* Imagery & Icons */
+.image-circle-lg {
+  width: 100px;
+  height: 100px;
+}
+
+.icon-lg-white {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.icon-circle {
+  width: 36px;
+  height: 36px;
+}
+
+.icon-sm {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Footer elements */
+.footer-logo {
+  height: 55px;
+  margin-right: 10px;
+}
+
+.footer-desc {
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.footer-heading {
+  letter-spacing: 0.5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222222;
+}

@@ -1,121 +1,322 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+// import monthdateschedule from "../assets/Images/month-date-schedule.svg";
+// import PassengerTracking from "../assets/Images/PassengerTracking.svg";
+// import routemanagment from "../assets/Images/route-managment.svg";
 
 const StaffLogin = () => {
   return (
-    <div className="bg-offwhite min-vh-100 d-flex">
+    <div className="staff-login-page">
+
       <Container fluid className="p-0">
+
         <Row className="h-100 m-0">
-          
-          <Col lg={5} className="d-none d-lg-flex flex-column align-items-center justify-content-center p-5" style={{ backgroundColor: '#fcfcfc', borderRight: '1px solid #eaeaea' }}>
+
+          {/* Left Column */}
+          <Col
+            lg={5}
+            className="staff-left-panel d-none d-lg-flex flex-column align-items-center justify-content-center p-5"
+          >
+
             <div className="text-center mb-5">
-              <div className="mx-auto icon-circle mb-3" style={{ width: '120px', height: '120px', backgroundColor: '#fce8e8' }}>
-                <span style={{ fontSize: '3.5rem' }}>👮‍♂️</span>
+
+              <div className="staff-logo-circle mx-auto d-flex align-items-center justify-content-center mb-3">
+                <span className="staff-logo-icon">
+                  
+                </span>
               </div>
-              <h2 className="fw-bolder text-dark mt-2 fs-1">Staff Portal</h2>
-              <p className="text-secondary text-georgia fs-5">Manage routes, schedules & passengers</p>
+
+              <h2 className="staff-portal-title mt-2">
+                Staff Portal
+              </h2>
+
+              <p className="staff-subtitle">
+                Manage routes, schedules & passengers
+              </p>
+
             </div>
 
-            <div className="w-100" style={{ maxWidth: '400px' }}>
-              <Card className="custom-card mb-4 p-2">
-                <Card.Body className="d-flex align-items-center p-2">
-                  <div className="me-4 icon-circle bg-primary bg-opacity-10 text-primary" style={{ width: '50px', height: '50px' }}>🗺️</div>
-                  <div className="text-georgia">
-                    <h6 className="m-0 fw-bold fs-5">Route Management</h6>
-                    <span className="text-secondary">Update and manage bus routes</span>
+            <div className="staff-feature-container">
+
+              {/* Route Management */}
+              <Card className="staff-feature-card mb-3">
+
+                <Card.Body className="d-flex align-items-center p-3">
+
+                  <div className="staff-feature-icon route-icon me-3">
+                    {/* <img
+                        src={routemanagmnet}
+                        alt="routemanagement"
+                        className="feature-image"
+                      /> */}
                   </div>
+
+                  <div>
+
+                    <h6 className="staff-feature-title">
+                      Route Management
+                    </h6>
+
+                    <small className="staff-feature-description">
+                      Update and manage bus routes
+                    </small>
+
+                  </div>
+
                 </Card.Body>
+
               </Card>
 
-              <Card className="custom-card mb-4 p-2">
-                <Card.Body className="d-flex align-items-center p-2">
-                  <div className="me-4 icon-circle bg-warning bg-opacity-10 text-warning" style={{ width: '50px', height: '50px' }}>📋</div>
-                  <div className="text-georgia">
-                    <h6 className="m-0 fw-bold fs-5">Schedule Control</h6>
-                    <span className="text-secondary">Set and modify bus schedules</span>
+
+              {/* Schedule Control */}
+              <Card className="staff-feature-card mb-3">
+
+                <Card.Body className="d-flex align-items-center p-3">
+
+                  <div className="staff-feature-icon schedule-icon me-3">
+                    {/* <img
+                        src={monthdateschedule}
+                        alt="monthdateschedule"
+                        className="feature-image"
+                      /> */}
                   </div>
+
+                  <div>
+
+                    <h6 className="staff-feature-title">
+                      Schedule Control
+                    </h6>
+
+                    <small className="staff-feature-description">
+                      Set and modify bus schedules
+                    </small>
+
+                  </div>
+
                 </Card.Body>
+
               </Card>
 
-              <Card className="custom-card p-2">
-                <Card.Body className="d-flex align-items-center p-2">
-                  <div className="me-4 icon-circle bg-secondary bg-opacity-10 text-secondary" style={{ width: '50px', height: '50px' }}>👥</div>
-                  <div className="text-georgia">
-                    <h6 className="m-0 fw-bold fs-5">Passenger Tracking</h6>
-                    <span className="text-secondary">Monitor ridership and capacity</span>
+
+              {/* Passenger Tracking */}
+              <Card className="staff-feature-card">
+
+                <Card.Body className="d-flex align-items-center p-3">
+
+                  <div className="staff-feature-icon passenger-icon me-3">
+                    {/* <img
+                        src={PassengerTracking}
+                        alt="Passenger Tracking"
+                        className="feature-image"
+                      /> */}
                   </div>
+
+                  <div>
+
+                    <h6 className="staff-feature-title">
+                      Passenger Tracking
+                    </h6>
+
+                    <small className="staff-feature-description">
+                      Monitor ridership and capacity
+                    </small>
+
+                  </div>
+
                 </Card.Body>
+
               </Card>
+
             </div>
+
           </Col>
 
-          <Col lg={7} xs={12} className="d-flex align-items-center justify-content-center p-4 p-lg-5">
-            <div className="login-box">
+
+          {/* Right Column */}
+          <Col
+            lg={7}
+            xs={12}
+            className="d-flex align-items-center justify-content-center p-4 p-lg-5"
+          >
+
+            <div className="staff-login-form-container">
+
               <div className="text-center mb-4">
-                <h2 className="fw-bolder text-dark">Staff Sign In</h2>
-                <p className="text-secondary text-georgia">Access the staff management portal</p>
+
+                <h2 className="staff-signin-title">
+                  Staff Sign In
+                </h2>
+
+                <p className="staff-signin-subtitle">
+                  Access the staff management portal
+                </p>
+
               </div>
 
-              <div className="d-flex p-1 mb-5 rounded" style={{ backgroundColor: '#f3f4f6' }}>
-                <Link to="/login" className="flex-fill text-center py-2 text-secondary link-no-decor fw-bold text-georgia">
+
+              {/* Role Toggle */}
+              <div className="d-flex p-1 mb-4 staff-role-toggle">
+
+                <Link
+                  to="/login"
+                  className="staff-role-link staff-inactive-role"
+                >
                   User
                 </Link>
-                <Link to="/staff-login" className="flex-fill text-center py-2 bg-dark text-white rounded link-no-decor fw-bold">
+
+                <Link
+                  to="/staff-login"
+                  className="staff-role-link staff-active-role"
+                >
                   Staff
                 </Link>
-               <Link to="/admin-login" className="flex-fill text-center py-2 text-secondary link-no-decor fw-bold text-georgia">
-                                Admin
-                               </Link>
-              </div>
 
-              <Form>
-                <Form.Group className="mb-4">
-                  <Form.Label className="fw-bold text-dark text-georgia">STAFF ID</Form.Label>
-                  <Form.Control type="text" placeholder="Enter your staff ID (e.g. BT-2024-001)" className="shadow-none py-3 rounded" style={{ border: '1px solid #e2e8f0' }} />
-                </Form.Group>
-
-                <Form.Group className="mb-4">
-                  <Form.Label className="fw-bold text-dark text-georgia">PASSWORD</Form.Label>
-                  <div className="d-flex align-items-center rounded overflow-hidden" style={{ border: '1px solid #e2e8f0' }}>
-                    <Form.Control type="password" placeholder="••••••••••••" className="border-0 shadow-none py-3" />
-                    <Button variant="link" className="text-decoration-none shadow-none px-4 text-danger fw-bold text-georgia">Show</Button>
-                  </div>
-                </Form.Group>
-
-                <div className="d-flex justify-content-between align-items-center mb-5 text-georgia">
-                  <Form.Check type="checkbox" label="Remember me" id="remember-me" className="text-secondary" />
-                  <a href="#forgot" className="text-danger fw-bold link-no-decor">Forgot password?</a>
+                <div className="staff-role-link staff-disabled-role">
+                  Admin
                 </div>
 
-                <Button className="btn-custom-red w-100 py-3 mb-5 fs-5 text-georgia">
-                  Sign In to Staff Portal &rarr;
+              </div>
+
+
+              <Form>
+
+                {/* Staff ID */}
+                <Form.Group className="mb-4">
+
+                  <Form.Label className="staff-form-label">
+                    STAFF ID
+                  </Form.Label>
+
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter your staff ID (e.g. BT-2024-001)"
+                    className="staff-input shadow-none py-2"
+                  />
+
+                </Form.Group>
+
+
+                {/* Password */}
+                <Form.Group className="mb-4">
+
+                  <Form.Label className="staff-form-label">
+                    PASSWORD
+                  </Form.Label>
+
+                  <div className="staff-password-wrapper">
+
+                    <Form.Control
+                      type="password"
+                      placeholder="••••••••••••"
+                      className="border-0 shadow-none py-2 staff-password-input"
+                    />
+
+                    <Button
+                      variant="link"
+                      className="staff-show-btn text-decoration-none shadow-none px-3"
+                    >
+                      Show
+                    </Button>
+
+                  </div>
+
+                </Form.Group>
+
+
+                {/* Remember & Forgot */}
+                <div className="d-flex justify-content-between align-items-center mb-4">
+
+                  <Form.Check
+                    type="checkbox"
+                    label="Remember me"
+                    id="remember-me"
+                    className="remember-me"
+                  />
+
+                  <a
+                    href="#forgot"
+                    className="forgot-password"
+                  >
+                    Forgot password?
+                  </a>
+
+                </div>
+
+
+                {/* Sign In */}
+                <Button className="w-100 py-2 mb-4 staff-signin-btn">
+                  Sign In to Staff Portal →
                 </Button>
+
               </Form>
 
-              <div className="d-flex align-items-center mb-4 text-georgia">
-                <hr className="flex-fill m-0 opacity-25" />
-                <span className="px-3 text-secondary">or continue with</span>
-                <hr className="flex-fill m-0 opacity-25" />
+
+              {/* Divider */}
+              <div className="d-flex align-items-center mb-4">
+
+                <hr className="flex-fill m-0 staff-divider-line" />
+
+                <span className="px-3 staff-divider-text">
+                  or continue with
+                </span>
+
+                <hr className="flex-fill m-0 staff-divider-line" />
+
               </div>
 
-              <Button className="btn-custom-outline w-100 py-3 mb-5 d-flex align-items-center justify-content-center text-georgia fs-5">
-                <span className="fw-bolder text-primary me-2">G</span> Continue with Google
+
+              {/* Google */}
+              <Button
+                variant="outline-dark"
+                className="w-100 py-2 mb-4 d-flex align-items-center justify-content-center shadow-none staff-google-btn"
+              >
+
+                <span className="staff-google-letter">
+                  G
+                </span>
+
+                Continue with Google
+
               </Button>
 
-              <div className="text-center mb-4 text-georgia">
-                <span className="text-secondary">Not a staff member? Contact admin</span><br />
-                <a href="mailto:admin@bustrack.in" className="text-danger fw-bold link-no-decor fs-5">admin@bustrack.in</a>
+
+              {/* Admin Contact */}
+              <div className="text-center mb-4">
+
+                <span className="staff-contact-text">
+                  Not a staff member? Contact admin
+                </span>
+
+                <br />
+
+                <a
+                  href="mailto:admin@bustrack.in"
+                  className="admin-email"
+                >
+                  admin@bustrack.in
+                </a>
+
               </div>
 
-              <div className="text-center p-3 rounded bg-light border text-georgia">
-                <span className="text-secondary">🔒 Secure Staff Access · All sessions are logged</span>
+
+              {/* Security */}
+              <div className="text-center p-2 staff-security-box">
+
+                <span className="staff-security-text">
+                  🔒 Secure Staff Access · All sessions are logged
+                </span>
+
               </div>
 
             </div>
+
           </Col>
+
         </Row>
+
       </Container>
+
     </div>
   );
 };

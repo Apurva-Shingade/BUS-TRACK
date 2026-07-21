@@ -7,6 +7,7 @@ import Track from "./pages/Track";
 import UserLogin from "./pages/UserLogin";
 import StaffLogin from "./pages/StaffLogin";
 import AdminLogin from "./pages/AdminLogin";
+import UserRegistration from "./pages/UserRegistration";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/track" element={<Track />} />
           <Route path="/login" element={<UserLogin />} />
+          <Route path="/signup" element={<UserRegistration />} />
           <Route path="/staff-login" element={<StaffLogin />} />
-          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/user-login" element={<UserLogin />} />
         </Routes>
       </BrowserRouter>
     </>
