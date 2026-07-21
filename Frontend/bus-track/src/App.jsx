@@ -6,6 +6,7 @@ import Schedule from "./pages/Schedule";
 import Track from "./pages/Track";
 import UserLogin from "./pages/UserLogin";
 import StaffLogin from "./pages/StaffLogin";
+import AdminLogin from "./pages/AdminLogin";
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
           <Route path="/routes" element={<RoutesPage />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/track" element={<Track />} />
-        
           <Route path="/login" element={<UserLogin />} />
           <Route path="/staff-login" element={<StaffLogin />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
         </Routes>
       </BrowserRouter>
     </>

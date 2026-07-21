@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 import bannerImg from '../assets/Images/banner.svg';
 import smallBusImg from '../assets/Images/sbus.svg';
 import logo from '../assets/Images/Bus-track-logo.svg'; 
+import clock from '../assets/Images/clock.svg'
+import crowd from '../assets/Images/crowd.svg'
+import explore from '../assets/Images/explore.svg'
+import gps from '../assets/Images/gps.svg'
+import points from '../assets/Images/points.svg'
+import share from '../assets/Images/share.svg'
+import staff from '../assets/Images/staff.svg'
+import track from '../assets/Images/track.svg'
+
 const Home = () => {
   return (
     <div className="bg-offwhite min-vh-100">
@@ -166,34 +175,34 @@ const Home = () => {
           <Row>
             <Col lg={6} md={12}>
               <div className="p-4 mb-4 d-flex align-items-start custom-card">
-                <div className="me-3 icon-circle" style={{ backgroundColor: '#fcdede', color: '#ef3b3a', width: '40px', height: '40px' }}>
-                  🎯
+                <div className="me-3 icon-circle" style={{ width: '40px', height: '40px' }}>
+                  <img src={track} alt="track" style={{ width: '22px', height: '22px', objectFit: 'contain' }}/>
                 </div>
                 <div>
                   <h5 className="fw-bold text-dark mb-1">Live Bus Tracking</h5>
                   <p className="text-secondary text-georgia mb-2" style={{ lineHeight: '1.5' }}>
                     See your bus move on a live map. Updated every few seconds using crowdsourced passenger GPS — zero hardware dependency.
                   </p>
-                  <Badge style={{ backgroundColor: '#fcdede', color: '#f9f7f7' }}>CROWD-POWERED</Badge>
+                  <Badge bg="primary">CROWD-POWERED</Badge>
                 </div>
               </div>
 
               <div className="p-4 mb-4 d-flex align-items-start custom-card">
-                <div className="me-3 icon-circle" style={{ backgroundColor: '#fef3c7', color: '#f7f6f5', width: '40px', height: '40px' }}>
-                  ⭐
+                <div className="me-3 icon-circle" style={{ width: '40px', height: '40px' }}>
+                   <img src={points} alt="points" style={{ width: '22px', height: '22px', objectFit: 'contain' }}/>
                 </div>
                 <div>
                   <h5 className="fw-bold text-dark mb-1">Transit Points Economy</h5>
                   <p className="text-secondary text-georgia mb-2" style={{ lineHeight: '1.5' }}>
                     Earn points by sharing your ride location. Redeem for live tracking sessions or free passes worth ₹150.
                   </p>
-                  <Badge style={{ backgroundColor: '#fef3c7', color: '#faf9f8' }}>GIVE & TAKE</Badge>
+                  <Badge bg="primary">GIVE & TAKE</Badge>
                 </div>
               </div>
 
               <div className="p-4 mb-4 mb-lg-0 d-flex align-items-start custom-card">
-                <div className="me-3 icon-circle" style={{ backgroundColor: '#fee2e2', color: '#dc2626', width: '40px', height: '40px' }}>
-                  💬
+                <div className="me-3 icon-circle" style={{ width: '40px', height: '40px' }}>
+                   <img src={share} alt="share" style={{ width: '22px', height: '22px', objectFit: 'contain' }}/>
                 </div>
                 <div>
                   <h5 className="fw-bold text-dark mb-1">WhatsApp Location Share</h5>
@@ -206,34 +215,34 @@ const Home = () => {
 
             <Col lg={6} md={12}>
               <div className="p-4 mb-4 d-flex align-items-start custom-card">
-                <div className="me-3 icon-circle" style={{ backgroundColor: '#dbeafe', color: '#edeeef', width: '40px', height: '40px' }}>
-                  ⏱️
+                <div className="me-3 icon-circle" style={{ width: '40px', height: '40px' }}>
+                   <img src={clock} alt="clock" style={{ width: '22px', height: '22px', objectFit: 'contain' }}/>
                 </div>
                 <div>
                   <h5 className="fw-bold text-dark mb-1">Smart ETA Prediction</h5>
                   <p className="text-secondary text-georgia mb-2" style={{ lineHeight: '1.5' }}>
                     Arrival times adjusted in real-time for traffic and crowd levels. Know exactly when to leave home.
                   </p>
-                  <Badge style={{ backgroundColor: '#dbeafe', color: '#f4f6f9' }}>AI-POWERED</Badge>
+                  <Badge bg="primary">AI-POWERED</Badge>
                 </div>
               </div>
 
               <div className="p-4 mb-4 d-flex align-items-start custom-card">
-                <div className="me-3 icon-circle" style={{ backgroundColor: '#dcfce7', color: '#e3e8e5', width: '40px', height: '40px' }}>
-                  👥
+                <div className="me-3 icon-circle" style={{ width: '40px', height: '40px' }}>
+                   <img src={crowd} alt="crowd" style={{ width: '22px', height: '22px', objectFit: 'contain' }}/>
                 </div>
                 <div>
                   <h5 className="fw-bold text-dark mb-1">Crowd Status Reports</h5>
                   <p className="text-secondary text-georgia mb-2" style={{ lineHeight: '1.5' }}>
                     Live seat availability from fellow passengers — Empty, Moderate, or Full — before you even reach the stop.
                   </p>
-                  <Badge style={{ backgroundColor: '#dcfce7', color: '#ffffff' }}>LIVE DATA</Badge>
+                  <Badge bg="primary">LIVE DATA</Badge>
                 </div>
               </div>
 
               <div className="p-4 d-flex align-items-start custom-card">
-                <div className="me-3 icon-circle" style={{ backgroundColor: '#e0f2fe', color: '#0369a1', width: '40px', height: '40px' }}>
-                  📋
+                <div className="me-3 icon-circle" style={{ width: '40px', height: '40px' }}>
+                   <img src={explore} alt="explore" style={{ width: '22px', height: '22px', objectFit: 'contain' }}/>
                 </div>
                 <div>
                   <h5 className="fw-bold text-dark mb-1">Route & Schedule Explorer</h5>
@@ -341,7 +350,9 @@ const Home = () => {
               <Card className="custom-card p-4 text-center h-100" style={{ borderTop: '4px solid #2563eb' }}>
                 <Card.Body className="p-0 position-relative">
                   <Badge style={{ backgroundColor: '#dbeafe', color: '#f9f9fa', position: 'absolute', top: '-10px', right: '-10px' }}>TIER 1</Badge>
-                  <div className="fs-1 mt-4 mb-3">🚌</div>
+                  <div className="fs-1 mt-4 mb-3">
+                     <img src={staff} alt="staff" style={{ height: '48px', width: 'auto', objectFit: 'contain' }}/>
+                  </div>
                   <Card.Title className="fw-bold text-dark mb-2">Staff GPS</Card.Title>
                   <Card.Text className="text-secondary text-georgia mb-4" style={{ lineHeight: '1.6' }}>
                     Authoritative location broadcast from the driver's device. Highest accuracy, always prioritised first.
@@ -355,7 +366,10 @@ const Home = () => {
               <Card className="custom-card p-4 text-center h-100" style={{ borderTop: '4px solid #16a34a' }}>
                 <Card.Body className="p-0 position-relative">
                   <Badge style={{ backgroundColor: '#dcfce7', color: '#f2f7f4', position: 'absolute', top: '-10px', right: '-10px' }}>TIER 2</Badge>
-                  <div className="fs-1 mt-4 mb-3">👥</div>
+                  <div className="fs-1 mt-4 mb-3">
+                     <img src={crowd} alt="crowd" style={{ height: '48px', width: 'auto', objectFit: 'contain' }}/>
+
+                  </div>
                   <Card.Title className="fw-bold text-dark mb-2">Passenger GPS</Card.Title>
                   <Card.Text className="text-secondary text-georgia mb-4" style={{ lineHeight: '1.6' }}>
                     Aggregated anonymous location from multiple riders on the same bus. Reliable and self-correcting.
@@ -369,7 +383,9 @@ const Home = () => {
               <Card className="custom-card p-4 text-center h-100" style={{ borderTop: '4px solid #7c3aed' }}>
                 <Card.Body className="p-0 position-relative">
                   <Badge style={{ backgroundColor: '#f3e8ff', color: '#eeebf3', position: 'absolute', top: '-10px', right: '-10px' }}>TIER 3</Badge>
-                  <div className="fs-1 mt-4 mb-3">📡</div>
+                  <div className="fs-1 mt-4 mb-3">
+                <img src={gps} alt="gps" style={{ height: '48px', width: 'auto', objectFit: 'contain' }}/>
+                  </div>
                   <Card.Title className="fw-bold text-dark mb-2">Hardware GPS</Card.Title>
                   <Card.Text className="text-secondary text-georgia mb-4" style={{ lineHeight: '1.6' }}>
                     Physical transponder fallback for routes with low ridership. Future integration with MSRTC hardware.
@@ -468,7 +484,7 @@ const Home = () => {
           </p>
           
           <div className="d-flex justify-content-center gap-3 mb-4">
-            <Button as={Link} to="/login" className="bg-white text-danger border-0 fw-bold px-5 py-3 fs-5 rounded">
+            <Button as={Link} to="/signup" className="bg-white text-danger border-0 fw-bold px-5 py-3 fs-5 rounded">
               Create Account
             </Button>
             <Button variant="outline-light" className="fw-bold px-5 py-3 fs-5 rounded bg-transparent">
@@ -508,7 +524,7 @@ const Home = () => {
             <Col lg={2} md={4} xs={6} className="mb-4 mb-md-0">
               <h6 className="fw-bolder text-white mb-4" style={{ letterSpacing: '0.5px' }}>ACCOUNT</h6>
               <div className="d-flex flex-column gap-3 text-georgia">
-                <Link to="/login" className="link-no-decor text-secondary">Sign Up</Link>
+                <Link to="/signup" className="link-no-decor text-secondary">Sign Up</Link>
                 <Link to="/login" className="link-no-decor text-secondary">Login</Link>
                 <Link to="/staff-login" className="link-no-decor text-secondary">Staff Portal</Link>
                 <Link to="/admin" className="link-no-decor text-secondary">Admin Portal</Link>

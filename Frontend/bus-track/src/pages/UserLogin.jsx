@@ -65,9 +65,9 @@ const UserLogin = () => {
                 <Link to="/staff-login" className="flex-fill text-center py-2 text-secondary link-no-decor fw-bold text-georgia">
                   Staff
                 </Link>
-                <div className="flex-fill text-center py-2 text-secondary text-opacity-50 fw-bold text-georgia" style={{ cursor: 'not-allowed' }}>
-                  Admin
-                </div>
+                <Link to="/admin-login" className="flex-fill text-center py-2 text-secondary link-no-decor fw-bold text-georgia">
+                                 Admin
+                                </Link>
               </div>
 
               <div className="d-flex align-items-center p-3 mb-4 rounded bg-warning bg-opacity-10 border border-warning border-opacity-50 text-georgia">
